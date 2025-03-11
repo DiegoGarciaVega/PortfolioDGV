@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Diciembre 2024 - Diciembre 2028",
+    title: "Investigador",
+    company: "Instituto de Productos Lácteos de Asturias | CSIC",
+    description:
+      "Me enfoco en el desarrollo de herramientas digitales avanzadas para analizar datos generados mediante técnicas ómicas en la investigación alimentaria. Este rol incluye diseñar soluciones bioinformáticas y computacionales, aplicando metodologías de inteligencia artificial y ciencia de datos para integrar y analizar información de forma eficiente y precisa.",
+    link: "https://twitch.tv/midudev",
+  },
+  {
+    date: "Marzo 2024 - Diciembre 2024",
+    title: "Investigador",
+    company: "Universidad de Oviedo | Grupo Quantum and High Performance Computing",
+    description:
+      "Me dediqué a investigar cómo procesar inteligentemente señales sonoras cardio-pulmonares. Seleccioné bases de datos de audio, desarrollé técnicas de representación de señales y apliqué métodos de Machine Learning y Quantum Machine Learning. También implementé soluciones, realicé experimentos y ajusté prototipos para mejorar la tecnología en este campo, siempre con el objetivo de aportar avances para la salud cardiovascular y pulmonar.",
+  }
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

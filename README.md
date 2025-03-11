@@ -1,104 +1,43 @@
+# 📌 Diego García Vega - Portfolio
 
+Bienvenido a mi repositorio de GitHub, donde comparto mi trayectoria, intereses, habilidades y proyectos. Aquí encontrarás información sobre mi experiencia en investigación, desarrollo de software e inteligencia artificial.
 
-<div align="center">
-<img src="logo.png" height="90px" width="auto" /> 
-<h2>
-    <em>Résumé</em> minimalista maquetado para web y pdf
-</h2>
-<p>
-Esquema del JSON de CV de <a href="https://jsonresume.org/schema/">jsonresume.org</a>
-</p>
+## 👋 Sobre mí
+Soy Diego García Vega, un apasionado de la ciencia, la investigación y la informática. Soy Ingeniero Informático y Máster en Inteligencia Artificial, actualmente investigando en el Instituto de Productos Lácteos de Asturias (CSIC). Mi trabajo se centra en el desarrollo de herramientas digitales avanzadas para el análisis de datos ómicos en la investigación alimentaria.
 
+## 📚 Educación
+- **Máster en Investigación en Inteligencia Artificial** - Universidad Internacional Menéndez Pelayo (2023 - 2024)
+- **Grado en Ingeniería Informática en Tecnologías de la Información (Bilingüe 🇬🇧)** - Universidad de Oviedo (2019 - 2023)
 
-<p>
-Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz Jarocki</a>
+## 💼 Experiencia laboral
+- **Investigador | Instituto de Productos Lácteos de Asturias (CSIC)** *(Dic 2024 - Dic 2028)*
+  - Desarrollo de soluciones bioinformáticas aplicando IA y ciencia de datos.
+- **Investigador | Grupo Quantum and High Performance Computing - Universidad de Oviedo** *(Mar 2024 - Dic 2024)*
+  - Procesamiento de señales cardio-pulmonares con Machine Learning y Quantum Machine Learning.
 
-</p>
+## 🚀 Proyectos destacados
+- **Pennylane** *(Python, PyTorch)*
+  - Librería para experimentación en Machine Learning Cuántico (QML).
+- **Proyecto Momentum - Transformación Digital IPLA**
+  - Aplicación de IA y computación de alto rendimiento en el análisis de datos en alimentos y salud.
+- **Portfolio Digital** *(Astro, Tailwind CSS)*
+  - Desarrollo de mi portafolio digital con un enfoque en diseño web y usabilidad.
 
-</div>
+## 🔧 Habilidades
+- Inteligencia Artificial & Machine Learning
+- Programación en Python, PyTorch, Pennylane
+- Computación de Alto Rendimiento (HPC)
+- Procesamiento de señales & Bioinformática
+- Desarrollo web (Astro, Tailwind CSS)
 
-<div align="center">
-    <a href="#🚀-empezar">
-        Empezar
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="#🧞-comandos">
-        Comandos
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="#🔑-licencia">
-        Licencia
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="https://midu.dev">
-        Personal
-    </a>
-   
-</div>
+## 📢 Eventos & Publicaciones
+He participado en congresos nacionales e internacionales, como **IEEE MELECON 2024** y **SARTECO 2024**, donde expuse avances en inteligencia artificial y computación cuántica aplicada.
 
-<p></p>
+## 📞 Contáctame
+📄 [CV](#)  
+📧 [Email](mailto:diego@example.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/diegogarciavega/)  
+🐙 [GitHub](https://github.com/diegogarciavega)  
 
-<div align="center">
-
-![Astro Badge](https://img.shields.io/badge/Astro-BC52EE?logo=astro&logoColor=fff&style=flat)
-![GitHub stars](https://img.shields.io/github/stars/midudev/minimalist-portfolio-json)
-![GitHub issues](https://img.shields.io/github/issues/midudev/minimalist-portfolio-json)
-![GitHub forks](https://img.shields.io/github/forks/midudev/minimalist-portfolio-json)
-![GitHub PRs](https://img.shields.io/github/issues-pr/midudev/minimalist-portfolio-json)
-
-</div>
-
-<img src="portada.png"></img>
-
-## 🛠️ Stack
-
-- [**Astro**](https://astro.build/) - El framework web de la nueva época.
-- [**Typescript**](https://www.typescriptlang.org/) - JavaScript con sintaxis de tipado.
-- [**Ninja Keys**](https://github.com/ssleptsov/ninja-keys) - Menu desplegable con atajos de teclado hecho en puro Javascript.
-
-
-## 🚀 Empezar
-
-### 1. Usa este [repo](https://github.com/midudev/minimalist-portfolio-json) como _template_ de un proyecto de Astro
-
-
-- Yo uso [pnpm](https://pnpm.io/installation) como gestor de dependencias y empaquetador.
-
-```bash
-# Activa pnpm en MacOS, WSL & Linux:
-corepack enable
-corepack prepare pnpm@latest --activate
-
-# Inicializa el proyecto
-pnpm create astro@latest -- --template midudev/minimalist-portfolio-json
-```
-
-### 2. Añade tu contenido:
-Edita el archivo `cv.json` para crear tu propio Portafolio/CV imprimible.
-### 3. Lanza el servidor de desarrollo:
-
-```bash
-# Disfruta del resultado
-pnpm dev
-```
-
-
-1. Abre [**http://localhost:4321**](http://localhost:4321/) en tu navegador para ver el resultado 🚀
-
-
-## 🧞 Comandos
-
-|     | Comando          | Acción                                        |
-| :-- | :--------------- | :-------------------------------------------- |
-| ⚙️  | `dev` o `start` | Lanza un servidor de desarrollo local en  `localhost:4321`.  |
-| ⚙️  | `build`          | Comprueba posibles errores y hace un empaquetado de producción en `./dist/`.      |
-| ⚙️  | `preview`        | Vista previa en local `localhost:4321` |
-
-
-
-## 🔑 Licencia
-
-[MIT](LICENSE.txt) - Creado por [**midudev**](https://midu.dev).
-
-
-
+---
+✨ *Siempre en búsqueda de nuevos retos y oportunidades de aprendizaje.*

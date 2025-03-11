@@ -15,10 +15,14 @@ import { projects } from "@cv"
               <article>
                 <header>
                   <h3>
-                    <a href={url} target="_blank" title={`Ver el proyecto ${name}`}>
-                      {name}
-                    </a>
-                    {isActive && <span>•</span>}
+                    {url ? (
+                      <a href={url} target="_blank" title={`Ver el proyecto ${name}`}>
+                        {name}
+                      </a>
+                    ) : (
+                      <span>{name}</span>
+                    )}
+                    {isActive && <span id="loading">•</span>}
                     {github && (
                       <a
                         class="github-code-link"
@@ -86,7 +90,7 @@ import { projects } from "@cv"
     margin-bottom: 4px;
   }
 
-  article h3 span {
+  article h3 #loading {
     color: rgb(0, 188, 47);
     animation-name: flicker;
     animation-duration: 3s;

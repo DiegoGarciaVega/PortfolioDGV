@@ -1,0 +1,29 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Octubre 2023 - Julio 2024",
+    title: "Máster en Investigación en Inteligencia Artificial",
+    company: "Universidad Internacional Menéndez Pelayo",
+    description:
+      "Durante mis estudios de Máster, afiancé mis conocimientos en Machine Learning e Inteligencia Artificial, así como especializarme en este campo. Mientras cursaba esta titulación estuve trabajando como investigador en la Universidad de Oviedo."
+  },
+  {
+    date: "Septiembre 2019 - Junio 2023",
+    title: "Grado en Ingeniería Informática en Tecnologías de la Información Bilingüe 🇬🇧",
+    company: "Universidad de Oviedo",
+    description:
+      "Me dediqué a investigar cómo procesar inteligentemente señales sonoras cardio-pulmonares. Seleccioné bases de datos de audio, desarrollé técnicas de representación de señales y apliqué métodos de Machine Learning y Quantum Machine Learning. También implementé soluciones, realicé experimentos y ajusté prototipos para mejorar la tecnología en este campo, siempre con el objetivo de aportar avances para la salud cardiovascular y pulmonar.",
+  }
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

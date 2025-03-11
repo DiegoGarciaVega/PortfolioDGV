@@ -16,6 +16,13 @@ import Swift from "@/icons/swift.astro"
 import SwiftUI from "@/icons/swiftui.astro"
 import Kotlin from "@/icons/kotlin.astro"
 import Flutter from "@/icons/flutter.astro"
+import Python from "@/icons/python.astro"
+import Pandas from "@/icons/pandas.astro"
+import Numpy from "@/icons/numpy.astro"
+import Tensorflow from "@/icons/Tensorflow.astro"
+import DataViz from "@/icons/DataViz.astro"
+import PyTorch from "@/icons/PyTorch.astro"
+import Pennylane from "@/icons/Pennylane.astro"
 
 const SKILLS_ICONS: Record<string, any> = {
   HTML,
@@ -33,6 +40,13 @@ const SKILLS_ICONS: Record<string, any> = {
   SwiftUI,
   Kotlin,
   Flutter,
+  Python,
+  Pandas,
+  Numpy,
+  Tensorflow,
+  DataViz,
+  PyTorch,
+  Pennylane
 }
 ---
 
@@ -40,7 +54,7 @@ const SKILLS_ICONS: Record<string, any> = {
   <ul>
     {
       skills.map(({ name }) => {
-        const iconName = name === "Next.js" ? "Next" : name
+        const iconName = name === "Data Visualization" ? "DataViz" : name
         const Icon = SKILLS_ICONS[iconName]
 
         return (

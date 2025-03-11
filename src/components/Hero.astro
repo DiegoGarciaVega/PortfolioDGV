@@ -1,0 +1,59 @@
+---
+const personalImageAlt = "Diego García Vega"
+import Badge from "@/components/Badge.astro"
+import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import MailIcon from "@/components/icons/Mail.astro"
+import SocialPill from "@/components/SocialPill.astro"
+import GitHub from "./icons/GitHub.astro"
+import Curriculum from "./icons/Curriculum.astro"
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="https://media.licdn.com/dms/image/v2/D4D03AQGBUWseuHto7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1731959739003?e=1747267200&v=beta&t=hbw_Z1SeX3B3JD9wYH8ntUd6XcVZpzvw8aso7j8uHR0"
+      alt={personalImageAlt}
+    />
+    <!-- <a
+      href="https://www.linkedin.com/in/diegogarciavega/"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a> -->
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Soy Diego García Vega
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-cyan-400 [&>strong]:text-cyan-400 [&>strong]:font-semibold dark:text-gray-300"
+  >
+    Apasionado por la ciencia, investigación e informática. <strong
+      >Ingeniero Informático y Máster en Inteligencia Artificial</strong
+    > de Asturias, España 🇪🇸. 
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <!-- <SocialPill href="/cv/"> -->
+    <SocialPill href={`${import.meta.env.BASE_URL}/cv/`}>
+      <Curriculum class="size-4" />
+      CV
+    </SocialPill>
+    <SocialPill href="mailto:diegogarciavega@gmail.com">
+      <MailIcon class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill href="https://www.linkedin.com/in/diegogarciavega/">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+    <SocialPill href="https://github.com/DiegoGarciaVega">
+      <GitHub class="size-4" />
+      GitHub
+    </SocialPill>
+    
+  </nav>
+</div>
