@@ -1,71 +1,60 @@
 {
   "basics": {
-    "name": "Miguel Ángel Durán",
-    "label": "Full-Stack developer with more than 15 years of experience & development content creator",
-    "image": "/me.webp",
-    "email": "miduga@gmail.com",
-    "phone": "+34 688888888",
-    "url": "https://midu.dev",
-    "summary": "+15 years of experience as a web developer. Currently I am a content creator and development dommunicator. I live in Barcelona, Spain. I have worked in different environments: from accelerating the development of start-ups to leading teams in multinational companies.",
+    "name": "Diego García Vega",
+    "label": "Investigador en Aprendizaje Automático e Inteligencia Artificial",
+    "image": "../Me.jpeg",
+    "email": "diegogarciavega@gmail.com",
+    "url": "https://diegogarciavega.github.io/PortfolioDGV/",
+    "summary": "Soy un profesional con experiencia en aprendizaje automático, análisis de datos e investigación. Me especializo en encontrar soluciones innovadoras a problemas complejos, combinando mi formación en Ingeniería Informática e Ingeligencia Artificial. Me caracterizo por mi pensamiento analítico, adaptabilidad y compromiso con la búsqueda del conocimiento.",
     "location": {
       "address": "",
-      "postalCode": "08820",
-      "city": "el Prat de Llobregat",
+      "postalCode": "",
+      "city": "Gijón, Asturias",
       "countryCode": "ES",
-      "region": "Spain"
+      "region": "España"
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "midudev",
-        "url": "https://linkedin.com/in/midudev"
-      },
-      {
-        "network": "X",
-        "username": "midudev",
-        "url": "https://x.com/midudev"
+        "username": "diegogarciavega",
+        "url": "https://www.linkedin.com/in/diegogarciavega"
       },
       {
         "network": "GitHub",
-        "username": "midudev",
-        "url": "https://github.com/midudev"
+        "username": "DiegoGarciaVega",
+        "url": "https://github.com/DiegoGarciaVega"
+      }
+      ,
+      {
+        "network": "Portfolio",
+        "username": "DiegoGarciaVega",
+        "url": "https://diegogarciavega.github.io/PortfolioDGV/"
       }
     ]
   },
   "work": [
     {
-      "name": "midudev",
-      "position": "Web programming communicator",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2021-01-01",
+      "name": "Instituto de Productos Lácteos | CSIC",
+      "position": "Investigador",
+      "url": "https://www.ipla.csic.es/",
+      "startDate": "2024-12-27",
       "endDate": null,
-      "summary": "Most watched development streamer in Spanish on Twitch. +1 million followers across all my social networks. Recognised by Google, Microsoft and GitHub for my impact on the development community.",
+      "summary": "Como investigador en el Instituto de Productos Lácteos de Asturias (IPLA-CSIC), en colaboración con la Universidad de Oviedo, me enfoco en el desarrollo de herramientas digitales avanzadas para analizar datos generados mediante técnicas ómicas en la investigación alimentaria. Este rol incluye diseñar soluciones bioinformáticas y computacionales, aplicando metodologías de inteligencia artificial y ciencia de datos para integrar y analizar información de forma eficiente y precisa. Además, participo en un programa de formación, lo que me permite innovar en un entorno multidisciplinario en constante evolución tecnológica.",
       "highlights": [
         "Started the company"
       ]
     },
     {
-      "name": "Adevinta",
-      "position": "Lead Frontend Architect",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2016-06-01",
-      "endDate": "2022-09-01",
-      "summary": "I led a technical convergence between different products and migrated from a monolithic architecture to a more flexible and optimised one. I fostered best practices and performance culture improvements, as well as rapid delivery of value to users.",
+      "name": "Universidad de Oviedo Grupo Quantum and High Performance Computing",
+      "position": "Investigador",
+      "url": "https://qhpc.uniovi.es/",
+      "startDate": "2024-03-01",
+      "endDate": "2024-08-31",
+      "summary": "Investigación de procesamiento inteligente de señales sonoras cardio-pulmonares. Responsable de realizar análisis y selección de bases de datos de audio específicas, desarrollar técnicas de representación de señales, aplicar métodos de Machine Learning y Quantum Machine Learning, implementar soluciones, llevar a cabo experimentación rigurosa, y ajustar así como proponer prototipos para avanzar en la investigación en este ámbito. Orientado a contribuir al progreso y aplicación de tecnologías para la mejora de la salud cardiovascular y pulmonar.",
       "highlights": [
         "Started the company"
       ]
-    },
-    {
-      "name": "Hubii",
-      "position": "Senior FrontEnd Developer",
-      "startDate": "2011-03-01",
-      "endDate": "2016-05-01",
-      "summary": "I developed a geolocated news platform and an API to consume the information. Scaled services to support the load of over hundreds of thousands of requests per day. Cut delivery times and deployments to production by half. Collaborated with Mozilla and Telefónica to develop the first FirefoxOS TV app.",
-      "highlights": [
-        "Started the company"
-      ]
-    }
-  ],
+    }],
   "volunteer": [{
     "organization": "Organization",
     "position": "Volunteer",
@@ -78,16 +67,24 @@
     ]
   }],
   "education": [{
-    "institution": "Universitat Oberta de Catalunya",
-    "url": "https://www.uoc.edu/portal/es/index.html",
-    "area": "Software Engineer",
+    "institution": "Universidad de Oviedo",
+    "url": "https://www.uniovi.es/estudia/grados/ingenieria/tecnologiasinformacion",
+    "area": "Grado en Ingeniería Informática en Tecnologías de la Información 🇬🇧",
     "studyType": "Bachelor",
-    "startDate": "2003-01-01",
-    "endDate": "2009-01-01",
+    "startDate": "2019-09-01",
+    "endDate": "2023-06-01",
     "score": "4.0",
     "courses": [
       "DB1101 - Basic SQL"
     ]
+  },
+  {
+    "institution": "Universidad Internacional Menendez Pelayo",
+    "url": "https://www.uimp.es/postgrado/estudios/fichaestudio.php?plan=P04C&any=2024-25&verasi=N&lan=es",
+    "area": "Máster Universitario en Investigación en Inteligencia Artificial ",
+    "studyType": "Master",
+    "startDate": "2023-09-01",
+    "endDate": "2024-06-01"
   }],
   "awards": [{
     "title": "Award",
@@ -110,80 +107,45 @@
   }],
   "skills": [
     {
-      "name": "HTML",
-      "level": "Master",
-      "keywords": [
-        "Web development", "Frontend"
-      ]
+      "name": "Python",
+      "level": "Master"
     },
     {
-      "name": "CSS",
-      "level": "Master",
-      "keywords": [
-        "Web development", "Frontend", "Diseño Responsive"
-      ]
+      "name": "Pandas",
+      "level": "Master"
     },
     {
-      "name": "JavaScript",
-      "level": "Master",
-      "keywords": [
-        "Web development", "Frontend", "Backend", "Fullstack"
-      ]
+      "name": "Numpy",
+      "level": "Master"
     },
     {
-      "name": "Tailwind",
-      "level": "Advanced",
-      "keywords": [
-        "Web development", "Frontend", "CSS Framework", "Diseño Responsive"
-      ]
+      "name": "Tensorflow",
+      "level": "Avanzado"
     },
     {
-      "name": "TypeScript",
-      "level": "Advanced",
-      "keywords": [
-        "Web development", "Frontend", "Backend", "JavaScript Superset"
-      ]
+      "name": "PyTorch",
+      "level": "Avanzado"
     },
     {
-      "name": "Node",
-      "level": "Advanced",
-      "keywords": [
-        "Web development", "Backend", "JavaScript", "Servidor"
-      ]
+      "name": "Pennylane",
+      "level": "Intermedio"
     },
     {
-      "name": "MySQL",
-      "level": "Advanced",
-      "keywords": [
-        "Bases de Datos", "SQL", "Database", "Backend"
-      ]
+      "name": "Data Visualization",
+      "level": "Avanzado"
     },
     {
       "name": "Git",
-      "level": "Advanced",
+      "level": "Avanzado",
       "keywords": [
-        "Version control", "Colaboración", "Source code"
+        "Control de Versiones", "Colaboración", "Código Fuente"
       ]
     },
     {
       "name": "GitHub",
-      "level": "Advanced",
+      "level": "Avanzado",
       "keywords": [
-        "Version control", "Collaboration", "Source code", "Git"
-      ]
-    },
-    {
-      "name": "Next.js",
-      "level": "Advanced",
-      "keywords": [
-        "Web development", "Frontend", "React Framework", "SSR", "Static Generation"
-      ]
-    },
-    {
-      "name": "React",
-      "level": "Advanced",
-      "keywords": [
-        "Web development", "Frontend", "JavaScript Library", "UI"
+        "Control de Versiones", "Colaboración", "Código Fuente", "Git"
       ]
     }
   ],
@@ -210,66 +172,47 @@
   }],
   "projects": [
     {
-      "name": "mars.codes",
+      "name": "LazyQML",
       "isActive": true,
-      "description": "Interactive story with programming challenges to travel to Mars",
+      "description": "Librería de fácil uso para probar distintos modelos de Quantum Machine Learning sobre un conjunto de datos.",
       "highlights": [
-        "Choose your own adventure",
-        "In progress"
+        "QML",
+        "Benchmarking",
+        "Open-Source"
       ],
-      "url": "https://mars.codes"
+      "url": "https://qhpc-sp-research-lab.github.io/LazyQML/",
+      "github": "https://github.com/QHPC-SP-Research-Lab/LazyQML"
     },
     {
-      "name": "AdventJS",
+      "name": "AdventofCode 2024",
       "isActive": true,
-      "description": "JavaScript programming challenges for every day of December until Christmas",
+      "description": "Realizar todos los retos de programación de todos los años de AdventofCode",
       "highlights": [
-        "+1 million visits",
-        "Multilanguage",
-        "JavaScript & TypeScript"
+        "Work in Progress"
       ],
-      "url": "https://advent.js/dev"
+      "url": "https://adventofcode.com/2024",
+      "github": "https://github.com/DiegoGarciaVega/AdventOfCode2024"
     },
     {
-      "name": "Codember",
-      "isActive": true,
-      "description": "Interactive programming game with challenges and secrets",
+      "name": "Atari Breakout RL",
+      "isActive": false,
+      "description": "Modelo de Reinforcement Learning que aprende a jugar a el mítico juego del Breakout. Desplegado mediante técnicas de visión por computador",
       "highlights": [
-        "+2000 active users",
-        "Challenges for any language"
+        "Computer Vision",
+        "Deep Q-Learning"
       ],
-      "url": "https://codember.dev"
+      "github": "https://github.com/uo275724/inteligencia-negocio-breakout"
+      
     },
     {
-      "name": "codi.link",
-      "isActive": true,
-      "description": "Playground of HTML, CSS and JavaScript code for sharing",
+      "name": "Exploring Hybrid Quantum-Classical Machine Learning for Respiratory Sound Analysis",
+      "isActive": false,
+      "description": "Artículo publicado en IEE, sobre Quantum Machine Learning en el campo de la biomedicina",
       "highlights": [
-        "100k monthly visit",
-        "Developed by the community"
+
       ],
-      "url": "https://codi.link",
-      "github": "https://github.com/midudev/codi.link"
-    },
-    {
-      "name": "Pruebas Técnicas",
-      "isActive": true,
-      "description": "List of technical tests of companies to practice programming",
-      "highlights": [
-        "100% free",
-        "+500 community solutions"
-      ],
-      "url": "https://pruebastecnicas.com",
-      "github": "https://github.com/midudev/pruebas-tecnicas"
-    },
-    {
-      "name": "miduConf",
-      "description": "Streaming programming conference for the Spanish-speaking community with top talks",
-      "highlights": [
-        "+15k tickets handed over",
-        "+50k live viewers"
-      ],
-      "url": "https://miduconf.com"
+      "url": "https://ieeexplore.ieee.org/document/10608509"
     }
+    
   ]
 }

@@ -34,7 +34,7 @@ Soy Diego García Vega, un apasionado de la ciencia, la investigación y la info
 He participado en congresos nacionales e internacionales, como **IEEE MELECON 2024** y **SARTECO 2024**, donde expuse avances en inteligencia artificial y computación cuántica aplicada.
 
 ## 📞 Contáctame
-📄 [CV](#)  
+📄 [CV](https://diegogarciavega.github.io/PortfolioDGV/cv)  
 📧 [Email](mailto:diego@example.com)  
 🔗 [LinkedIn](https://www.linkedin.com/in/diegogarciavega/)  
 🐙 [GitHub](https://github.com/diegogarciavega)  
