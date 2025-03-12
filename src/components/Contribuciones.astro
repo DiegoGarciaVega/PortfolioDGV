@@ -10,6 +10,7 @@ import Pennylane from "@/icons/Pennylane.astro"
 import AstroICO from "@/icons/Astro.astro"
 import Poster from "@/icons/Poster.astro"
 import Articulo from "@/icons/Articulo.astro"
+import Conferencia from "@/icons/Conference.astro"
 
 const TAGS = {
   NATIONAL: {
@@ -37,6 +38,11 @@ const TAGS = {
     class: "bg-black text-white outline outline-1 outline-[#7f7f7f]",
     icon: Articulo,
   },
+  CONGRESO: {
+    name: "Congreso",
+    class: "bg-black text-white outline outline-1 outline-[#7f7f7f]",
+    icon: Conferencia,
+  },
 }
 const PROJECTS = [
   {
@@ -48,7 +54,7 @@ const PROJECTS = [
       "",
     link: "",
     github: "",
-    tags: [TAGS.INTERNATIONAL, TAGS.POSTER],
+    tags: [TAGS.CONGRESO, TAGS.INTERNATIONAL, TAGS.POSTER], 
   },
   {
     title: "Hierarchical QCNNs and parameter optimization through bioinspired algorithms.",
@@ -58,7 +64,7 @@ const PROJECTS = [
     description:
       "",
     
-    tags: [TAGS.INTERNATIONAL, TAGS.POSTER],
+    tags: [TAGS.CONGRESO, TAGS.INTERNATIONAL, TAGS.POSTER],
   },
   {
     title: "LazyQML: A Python library to benchmark Quantum Machine Learning models.",
@@ -68,7 +74,7 @@ const PROJECTS = [
     description:
       "",
     
-    tags: [TAGS.INTERNATIONAL,TAGS.EUROPEAN, TAGS.ARTICULO],
+    tags: [TAGS.CONGRESO, TAGS.INTERNATIONAL,TAGS.EUROPEAN, TAGS.ARTICULO],
   },
   {
     title: "Avances en la clasificación de señales biomédicas con kernels cuánticos y otras técnicas de quantum machine learning.",
@@ -78,17 +84,17 @@ const PROJECTS = [
     description:
       "",
     
-    tags: [TAGS.NATIONAL, TAGS.ARTICULO],
+    tags: [TAGS.CONGRESO, TAGS.NATIONAL, TAGS.ARTICULO],
   },
   {
     title: "Performance Evaluation of Signal Representation Techniques for Respiratory Sounds using Quantum Machine Learning. ",
     authors: "García-Vega, D.; González-Castillo, S.; Combarro, E.F.; Ranilla, J.",
     publish: "The 22nd IEEE Mediterranean Electrotechnical Conference . Porto ",
-    date: "12/6/2024 - 14/6/2024",
+    date: "25/6/2024 - 27/6/2024",
     description:
       "",
     
-    tags: [TAGS.INTERNATIONAL ,TAGS.EUROPEAN, TAGS.ARTICULO],
+    tags: [TAGS.CONGRESO, TAGS.INTERNATIONAL ,TAGS.EUROPEAN, TAGS.ARTICULO],
   },
   {
     title: "Algunos experimentos en la detección de enfermedades respiratorias con procesamiento de señales sonoras y quantum machine learning.",
@@ -98,7 +104,7 @@ const PROJECTS = [
     description:
       "",
     
-    tags: [TAGS.NATIONAL, TAGS.ARTICULO],
+    tags: [TAGS.CONGRESO, TAGS.NATIONAL, TAGS.ARTICULO],
   },
 ]
 ---
@@ -130,9 +136,9 @@ const PROJECTS = [
                 </span> */}
                 <span
                   className={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 ${!tag.icon ? "pl-2" : ""}`}>
-  {tag.icon && <tag.icon className="size-4" />}
-  {tag.name}
-</span>
+                  {tag.icon && <tag.icon className="size-4" />}
+                  {tag.name}
+                </span>
               </li>
             ))}
           </ul>
