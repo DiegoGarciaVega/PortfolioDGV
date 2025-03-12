@@ -12,6 +12,8 @@ import Hero from "@/components/Hero.astro"
 import TitleSection from "@/components/TitleSection.astro"
 import Book from "@/components/icons/Book.astro"
 import Education from "@/components/Education.astro"
+import ArticulosIcon from "@/components/icons/ArticulosIcon.astro"
+import Contribuciones from "@/components/Contribuciones.astro"
 ---
 
 <Layout
@@ -39,6 +41,14 @@ import Education from "@/components/Education.astro"
           Educación
         </TitleSection>
         <Education />
+      </SectionContainer>
+
+      <SectionContainer id="contribuciones">
+        <TitleSection>
+          <ArticulosIcon class="size-7" />
+          Contribuciones Científicas
+        </TitleSection>
+        <Contribuciones />
       </SectionContainer>
 
     <SectionContainer id="proyectos">

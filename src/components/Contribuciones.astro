@@ -1,0 +1,217 @@
+---
+import GitHub from "./icons/GitHub.astro"
+import NextJS from "./icons/NextJS.astro"
+import Tailwind from "./icons/Tailwind.astro"
+import Link from "./icons/Link.astro"
+import LinkButton from "./LinkButton.astro"
+import Python from "@/icons/python.astro"
+import PyTorch from "@/icons/PyTorch.astro"
+import Pennylane from "@/icons/Pennylane.astro"
+import AstroICO from "@/icons/Astro.astro"
+import Poster from "@/icons/Poster.astro"
+import Articulo from "@/icons/Articulo.astro"
+
+const TAGS = {
+  NATIONAL: {
+    name: "🇪🇸 National",
+    class: "bg-black text-white outline outline-1 outline-[#7f7f7f]",
+    icon: "",
+  },
+  EUROPEAN: {
+    name: "🇪🇺 European",
+    class: "bg-black text-white outline outline-1 outline-[#7f7f7f]",
+    icon: "",
+  },
+  INTERNATIONAL: {
+    name: "🌍 International",
+    class: "bg-black text-white outline outline-1 outline-[#7f7f7f]",
+    icon: "",
+  },
+  POSTER: {
+    name: "Póster",
+    class: "bg-black text-white outline outline-1 outline-[#7f7f7f]",
+    icon: Poster,
+  },
+  ARTICULO: {
+    name: "Artículo",
+    class: "bg-black text-white outline outline-1 outline-[#7f7f7f]",
+    icon: Articulo,
+  },
+}
+const PROJECTS = [
+  {
+    title: "Application of Quantum Machine Learning for Detection of Adventitious Respiratory Sounds.",
+    authors: "Plou Llorente, F.; García-Vega, D.; Leal Castaño, A.; González Martínez, F.D.; Cañadas-Quesada, F.J.; Ranilla, J.",
+    publish: "1st International Workshop on Sound Signal Processing Applications. Cádiz",
+    date: "2/7/2024 - 8/7/2024",
+    description:
+      "",
+    link: "",
+    github: "",
+    tags: [TAGS.INTERNATIONAL, TAGS.POSTER],
+  },
+  {
+    title: "Hierarchical QCNNs and parameter optimization through bioinspired algorithms.",
+    authors: "Plou Llorente, F.; García-Vega, D.; Leal Castaño, A.; Salvador Navarro, A.A.; Combarro, E.F.; Cortina, R.",
+    publish: "24th Computational and Mathematical Methods in Science and Engineering Conference. Cádiz",
+    date: "2/7/2024 - 8/7/2024",
+    description:
+      "",
+    
+    tags: [TAGS.INTERNATIONAL, TAGS.POSTER],
+  },
+  {
+    title: "LazyQML: A Python library to benchmark Quantum Machine Learning models.",
+    authors: "García-Vega, D.; Plou Llorente, F.; Leal Castaño, A.; Combarro, E.F.; Ranilla, J.",
+    publish: "30th International European Conference on Parallel and Distributed Computing (Euro-Par 2024). Madrid ",
+    date: "30/8/2024",
+    description:
+      "",
+    
+    tags: [TAGS.INTERNATIONAL,TAGS.EUROPEAN, TAGS.ARTICULO],
+  },
+  {
+    title: "Avances en la clasificación de señales biomédicas con kernels cuánticos y otras técnicas de quantum machine learning.",
+    authors: "García-Vega, D.; González-Castillo, S.; Combarro, E.F.; Ranilla, J.",
+    publish: " 8º Encuentro ALAMA: Álgebra Lineal, Análisis Matricial y Aplicaciones. Gijón ",
+    date: "12/6/2024 - 14/6/2024",
+    description:
+      "",
+    
+    tags: [TAGS.NATIONAL, TAGS.ARTICULO],
+  },
+  {
+    title: "Performance Evaluation of Signal Representation Techniques for Respiratory Sounds using Quantum Machine Learning. ",
+    authors: "García-Vega, D.; González-Castillo, S.; Combarro, E.F.; Ranilla, J.",
+    publish: "The 22nd IEEE Mediterranean Electrotechnical Conference . Porto ",
+    date: "12/6/2024 - 14/6/2024",
+    description:
+      "",
+    
+    tags: [TAGS.INTERNATIONAL ,TAGS.EUROPEAN, TAGS.ARTICULO],
+  },
+  {
+    title: "Algunos experimentos en la detección de enfermedades respiratorias con procesamiento de señales sonoras y quantum machine learning.",
+    authors: "García-Vega, D.; González-Castillo, S.; Combarro, E.F.; Ranilla, J.",
+    publish: "XXXIV Jornadas de Paralelismo. Coruña",
+    date: "17/6/2024 - 19/6/2024",
+    description:
+      "",
+    
+    tags: [TAGS.NATIONAL, TAGS.ARTICULO],
+  },
+]
+---
+
+<div class="flex flex-col gap-y-16">
+  {
+    PROJECTS.map(({ title, publish, authors,  date, description, tags, link, github }) => (
+    <article class="flex flex-col space-y-8 group">
+      <div class="w-full">
+        <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 text-justify">
+          {title}
+        </h3>
+        <h4 class="text-xl font-bold text-gray-700 dark:text-gray-200 text-justify">
+          {publish}
+        </h4>
+        <h5 class="text-l text-gray-500 dark:text-gray-400 text-justify">
+          {authors}
+        </h5>
+        <h6 class="text-base text-gray-400 dark:text-gray-500 text-justify">
+          {date} 
+        </h6>
+        <div class="flex flex-wrap mt-2">
+          <ul class="flex flex-row mb-2 gap-x-2">
+            {tags.map((tag) => (
+              <li>
+                {/* <span class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}>
+                  <tag.icon class="size-4" />
+                  {tag.name}
+                </span> */}
+                <span
+                  className={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 ${!tag.icon ? "pl-2" : ""}`}>
+  {tag.icon && <tag.icon className="size-4" />}
+  {tag.name}
+</span>
+              </li>
+            ))}
+          </ul>
+          
+          <div class="mt-2 text-gray-700 dark:text-gray-400 text-justify">
+            {description}
+          </div>
+
+          <footer class="flex items-end justify-start mt-4 gap-x-4">
+            {github && (
+              <LinkButton href={github}>
+                <GitHub class="size-6" />
+                Code
+              </LinkButton>
+            )}
+            {link && (
+              <LinkButton href={link}>
+                <Link class="size-4" />
+                Link
+              </LinkButton>
+            )}
+          </footer>
+        </div>
+      </div>
+    </article>
+    ))
+  }
+</div>
+
+<!-- <div class="flex flex-col gap-y-16">
+  {
+    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+  <div class="w-full md:w-1/2">
+    <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+      <img alt="Imagen Proyecto" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+    </div>
+  </div>
+
+  <div class="w-full  md:max-w-lg">
+    <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
+      {title}
+    </h3>
+    <div class="flex flex-wrap mt-2">
+      <ul class="flex flex-row mb-2 gap-x-2">
+          {tags.map((tag) => (
+            <li>
+              <span
+                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+              >
+                <tag.icon class="size-4" />
+                {tag.name}
+              </span>
+            </li>
+          ))}
+        </ul>
+
+      <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
+      <footer class="flex items-end justify-start mt-4 gap-x-4">
+          {github && (
+            <LinkButton href={github}>
+              <GitHub class="size-6" />
+              Code
+              
+            </LinkButton>
+          )}
+          {link && (
+            <LinkButton href={link}>
+              <Link class="size-4" />
+              Web
+            </LinkButton>
+          )}
+        </footer>
+    </div>
+  </div>
+</article>
+    ))
+  }
+</div> -->
+
+
+

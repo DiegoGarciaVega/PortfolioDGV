@@ -45,6 +45,11 @@ const navItems = [
     url: import.meta.env.BASE_URL + "/#educacion",
   },
   {
+    title: "Contribuciones",
+    label: "contribuciones",
+    url: import.meta.env.BASE_URL + "/#contribuciones",
+  },
+  {
     title: "Proyectos",
     label: "proyectos",
     url: import.meta.env.BASE_URL + "/#proyectos",
@@ -110,6 +115,97 @@ const navItems = [
 </div>
 
 <script>
+  function setupMobileMenu() {
+    const toggleBtn = document.getElementById("mobile-toggle-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    
+    if (toggleBtn && mobileMenu) {
+      console.log("Found toggle button and mobile menu");
+      
+      // Remove any existing event listeners to prevent duplicates
+      const newToggleBtn = toggleBtn.cloneNode(true);
+      toggleBtn.parentNode.replaceChild(newToggleBtn, toggleBtn);
+      
+      // Add toggle functionality
+      newToggleBtn.addEventListener("click", (e) => {
+        console.log("Toggle button clicked");
+        e.preventDefault();
+        e.stopPropagation();
+        mobileMenu.classList.toggle("hidden");
+      });
+      
+      // Close menu when a link is clicked
+      const mobileLinks = mobileMenu.querySelectorAll(".mobile-link");
+      mobileLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+    } else {
+      console.log("Failed to find toggle button or mobile menu");
+    }
+  }
+
+  // Run on initial page load
+  document.addEventListener("DOMContentLoaded", setupMobileMenu);
+  
+  // Re-run on Astro page transitions
+  document.addEventListener("astro:page-load", setupMobileMenu);
+  
+  // Setup click outside handler
+  document.addEventListener("click", (e) => {
+    const toggleBtn = document.getElementById("mobile-toggle-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    
+    if (toggleBtn && mobileMenu && !toggleBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+      mobileMenu.classList.add("hidden");
+    }
+  });
+
+  // Section highlighting logic
+  document.addEventListener("astro:page-load", () => {
+    const sections = document.querySelectorAll("section");
+    const navItems = document.querySelectorAll(".desktop-link, .mobile-link");
+    
+    const callback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          navItems.forEach((item) => {
+            if (item.getAttribute("aria-label") == entry.target.id) {
+              item.classList.add("text-blue-500");
+            } else {
+              item.classList.remove("text-blue-500");
+            }
+          });
+        }
+      });
+    };
+    
+    const observer = new IntersectionObserver(callback, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.3,
+    });
+    
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+    
+    // Cleanup function
+    document.onvisibilitychange = () => {
+      if (document.visibilityState === "hidden") {
+        observer.disconnect();
+      } else {
+        sections.forEach((section) => {
+          observer.observe(section);
+        });
+      }
+    };
+  });
+</script>
+
+
+<!-- <script>
   document.addEventListener("astro:page-load", () => {
     console.log("Page loaded, setting up mobile menu");
     
@@ -185,7 +281,7 @@ const navItems = [
       }
     };
   });
-</script>
+</script> -->
 
 <style>
   nav {
