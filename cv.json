@@ -83,8 +83,8 @@
     "url": "https://www.uimp.es/postgrado/estudios/fichaestudio.php?plan=P04C&any=2024-25&verasi=N&lan=es",
     "area": "Máster Universitario en Investigación en Inteligencia Artificial ",
     "studyType": "Master",
-    "startDate": "2023-09-01",
-    "endDate": "2024-06-01"
+    "startDate": "2023-10-01",
+    "endDate": "2024-09-01"
   }],
   "awards": [{
     "title": "Award",
@@ -207,7 +207,7 @@
     {
       "name": "Exploring Hybrid Quantum-Classical Machine Learning for Respiratory Sound Analysis",
       "isActive": false,
-      "description": "Artículo publicado en IEE, sobre Quantum Machine Learning en el campo de la biomedicina",
+      "description": "Artículo publicado en IEEE, sobre Quantum Machine Learning en el campo de la biomedicina",
       "highlights": [
 
       ],
