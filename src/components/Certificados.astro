@@ -1,0 +1,48 @@
+---
+
+const PROJECTS = [
+  {
+    link: "https://www.linkedin.com/posts/eviden_jornada-de-computaci%C3%B3n-cu%C3%A1ntica-en-asturias-activity-7292505926576558080-G7Cj/?originalSubdomain=es",
+    image: "certificates/myqml.png",
+  },
+  {
+    link: "https://www.freecodecamp.org/certification/DiegoGV/machine-learning-with-python-v7",
+    image: "certificates/freecodecampML.png",
+  },
+  {
+    link: "https://www.freecodecamp.org/certification/DiegoGV/scientific-computing-with-python-v7",
+    image: "certificates/freecodecampSCPy.png",
+  },
+  {
+    link: "https://learn.nvidia.com/certificates?id=8d08afaac49f48fe94295c4309d7fea3#",
+    image: "certificates/nvidiaDL.png",
+  },
+]
+---
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 auto-rows-fr">
+  {PROJECTS.map(({ image, link }) => (
+    <a href={link} class="group relative block overflow-hidden rounded-xl shadow-md transition-transform duration-2000 ease-in-out hover:z-10 hover:scale-110">
+      <div class="aspect-video overflow-hidden transition-transform duration-2000 ease-in-out">
+        <img 
+          class="w-full h-full object-cover transition-transform duration-2000 ease-in-out group-hover:object-contain" 
+          loading="lazy" 
+          src={image} 
+        />
+      </div>
+    </a>
+  ))}
+</div>
+
+<style>
+  .grid:hover .group:not(:hover) {
+    transform: scale(0.95);
+    transition: transform 2000ms cubic-bezier(0.33, 1, 0.68, 1);
+  }
+  .group {
+    transition: transform 2000ms cubic-bezier(0.33, 1, 0.68, 1);
+  }
+  .group:hover {
+    transform: scale(1.1);
+    transition: transform 2000ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+</style>
