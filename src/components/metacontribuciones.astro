@@ -1,0 +1,159 @@
+---
+import GitHub from "./icons/GitHub.astro"
+import NextJS from "./icons/NextJS.astro"
+import Tailwind from "./icons/Tailwind.astro"
+import Link from "./icons/Link.astro"
+import LinkButton from "./LinkButton.astro"
+import Python from "@/icons/python.astro"
+import PyTorch from "@/icons/PyTorch.astro"
+import Pennylane from "@/icons/Pennylane.astro"
+import AstroICO from "@/icons/Astro.astro"
+import Poster from "@/icons/Poster.astro"
+import Articulo from "@/icons/Articulo.astro"
+import Conferencia from "@/icons/Conference.astro"
+
+
+const TAGS = {
+    NATIONAL: {
+      name: "🇪🇸 National",
+      class: "bg-black text-white outline outline-1 outline-[#7f7f7f]",
+      icon: "",
+    },
+    EUROPEAN: {
+      name: "🇪🇺 European",
+      class: "bg-black text-white outline outline-1 outline-[#7f7f7f]",
+      icon: "",
+    },
+    INTERNATIONAL: {
+      name: "🌍 International",
+      class: "bg-black text-white outline outline-1 outline-[#7f7f7f]",
+      icon: "",
+    },
+    POSTER: {
+      name: "Póster",
+      class: "bg-black text-white outline outline-1 outline-[#7f7f7f]",
+      icon: Poster,
+    },
+    ARTICULO: {
+      name: "Artículo",
+      class: "bg-black text-white outline outline-1 outline-[#7f7f7f]",
+      icon: Articulo,
+    },
+    CONGRESO: {
+      name: "Congreso",
+      class: "bg-black text-white outline outline-1 outline-[#7f7f7f]",
+      icon: Conferencia,
+    },
+  }
+const PROJECTS = [
+  {
+    title: "Application of Quantum Machine Learning for Detection of Adventitious Respiratory Sounds.",
+    authors: "Plou Llorente, F.; García-Vega, D.; Leal Castaño, A.; González Martínez, F.D.; Cañadas-Quesada, F.J.; Ranilla, J.",
+    publish: "1st International Workshop on Sound Signal Processing Applications. Cádiz",
+    date: "2/7/2024 - 8/7/2024",
+    description:
+      "",
+    link: "",
+    github: "",
+    tags: [TAGS.CONGRESO, TAGS.INTERNATIONAL, TAGS.POSTER], 
+    metacognition:" LOREM",
+    image:"contributions/Application_of_Quantum_Machine_Learning_for_Detection_of_Adventitious_Respiratory_Sounds.png"
+  },
+  {
+    title: "Hierarchical QCNNs and parameter optimization through bioinspired algorithms.",
+    authors: "Plou Llorente, F.; García-Vega, D.; Leal Castaño, A.; Salvador Navarro, A.A.; Combarro, E.F.; Cortina, R.",
+    publish: "24th Computational and Mathematical Methods in Science and Engineering Conference. Cádiz",
+    date: "2/7/2024 - 8/7/2024",
+    description:
+      "",
+    
+    tags: [TAGS.CONGRESO, TAGS.INTERNATIONAL, TAGS.POSTER],
+    metacognition:" LOREM",
+    image:"contributions/Hierarchical_QCNNs_and_Parameter_Optimization_using_Bioinspired_Algorithms.png"
+  },
+  {
+    title: "LazyQML: A Python library to benchmark Quantum Machine Learning models.",
+    authors: "García-Vega, D.; Plou Llorente, F.; Leal Castaño, A.; Combarro, E.F.; Ranilla, J.",
+    publish: "30th International European Conference on Parallel and Distributed Computing (Euro-Par 2024). Madrid ",
+    date: "30/8/2024",
+    description:
+      "",
+    
+    tags: [TAGS.CONGRESO, TAGS.INTERNATIONAL,TAGS.EUROPEAN, TAGS.ARTICULO],
+    metacognition:" LOREM"
+  },
+  {
+    title: "Avances en la clasificación de señales biomédicas con kernels cuánticos y otras técnicas de quantum machine learning.",
+    authors: "García-Vega, D.; González-Castillo, S.; Combarro, E.F.; Ranilla, J.",
+    publish: " 8º Encuentro ALAMA: Álgebra Lineal, Análisis Matricial y Aplicaciones. Gijón ",
+    date: "12/6/2024 - 14/6/2024",
+    description:
+    "",
+    
+    tags: [TAGS.CONGRESO, TAGS.NATIONAL, TAGS.ARTICULO],
+    metacognition:" LOREM"
+    },
+     {
+     title: "Performance Evaluation of Signal Representation Techniques for Respiratory Sounds using Quantum Machine Learning. ",
+    authors: "García-Vega, D.; González-Castillo, S.; Combarro, E.F.; Ranilla, J.",
+    publish: "The 22nd IEEE Mediterranean Electrotechnical Conference . Porto ",
+    date: "25/6/2024 - 27/6/2024",
+    description:
+      "",
+    
+    tags: [TAGS.CONGRESO, TAGS.INTERNATIONAL ,TAGS.EUROPEAN, TAGS.ARTICULO],
+    metacognition:" LOREM"
+  },
+  {
+    title: "Algunos experimentos en la detección de enfermedades respiratorias con procesamiento de señales sonoras y quantum machine learning.",
+    authors: "García-Vega, D.; González-Castillo, S.; Combarro, E.F.; Ranilla, J.",
+    publish: "XXXIV Jornadas de Paralelismo. Coruña",
+    date: "17/6/2024 - 19/6/2024",
+    description:
+      "",
+    
+    tags: [TAGS.CONGRESO, TAGS.NATIONAL, TAGS.ARTICULO],
+    metacognition:" LOREM"
+  },
+]
+---
+
+
+<div class="flex flex-col gap-y-16">
+    {PROJECTS.map(({ title, publish, authors, date, tags, metacognition, image }) => (
+      <article class="flex flex-col space-y-8 group bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md">
+        <div class="w-full">
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">{title}</h3>
+          <h4 class="text-xl font-bold text-gray-700 dark:text-gray-200">{publish}</h4>
+          <h5 class="text-l text-gray-500 dark:text-gray-400">{authors}</h5>
+          <h6 class="text-base text-gray-400 dark:text-gray-500">{date}</h6>
+          <div class="flex flex-wrap mt-2">
+            <ul class="flex flex-row mb-2 gap-x-2">
+              {tags.map((tag) => (
+                <li>
+                  <span className={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}>{tag.name}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          
+          {image && (
+            <div class="mt-4 mb-2 overflow-hidden rounded-lg">
+              <img 
+                src={image} 
+                alt={`Image for ${title}`} 
+                class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+          )}
+          
+          {metacognition && (
+            <div class="mt-4 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg">
+              <h3 class="text-xl font-semibold">Metacognición</h3>
+              <p class="text-gray-700 dark:text-gray-300">{metacognition}</p>
+            </div>
+          )}
+        </div>
+      </article>
+    ))}
+  </div>
