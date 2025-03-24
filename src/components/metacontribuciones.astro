@@ -57,7 +57,7 @@ const PROJECTS = [
     github: "",
     tags: [TAGS.CONGRESO, TAGS.INTERNATIONAL, TAGS.POSTER], 
     metacognition:"",
-    image:"${import.meta.env.BASE_URL}contributions/Application_of_Quantum_Machine_Learning_for_Detection_of_Adventitious_Respiratory_Sounds.png"
+    image:"contributions/Application_of_Quantum_Machine_Learning_for_Detection_of_Adventitious_Respiratory_Sounds.png"
   },
   {
     title: "Hierarchical QCNNs and parameter optimization through bioinspired algorithms.",
@@ -69,7 +69,7 @@ const PROJECTS = [
     
     tags: [TAGS.CONGRESO, TAGS.INTERNATIONAL, TAGS.POSTER],
     metacognition:"",
-    image:"${import.meta.env.BASE_URL}contributions/Hierarchical_QCNNs_and_Parameter_Optimization_using_Bioinspired_Algorithms.png"
+    image:"contributions/Hierarchical_QCNNs_and_Parameter_Optimization_using_Bioinspired_Algorithms.png"
   },
   {
     title: "LazyQML: A Python library to benchmark Quantum Machine Learning models.",
@@ -140,7 +140,7 @@ const PROJECTS = [
           {image && (
             <div class="mt-4 mb-2 overflow-hidden rounded-lg">
               <img 
-                src={image} 
+                src={`${import.meta.env.BASE_URL}/${image}`} 
                 alt={`Image for ${title}`} 
                 class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
               />
