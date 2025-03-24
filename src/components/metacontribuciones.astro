@@ -1,15 +1,7 @@
 ---
-import GitHub from "./icons/GitHub.astro"
-import NextJS from "./icons/NextJS.astro"
-import Tailwind from "./icons/Tailwind.astro"
-import Link from "./icons/Link.astro"
-import LinkButton from "./LinkButton.astro"
-import Python from "@/icons/python.astro"
-import PyTorch from "@/icons/PyTorch.astro"
-import Pennylane from "@/icons/Pennylane.astro"
-import AstroICO from "@/icons/Astro.astro"
 import Poster from "@/icons/Poster.astro"
 import Articulo from "@/icons/Articulo.astro"
+// import Conferencia from "../icons/Conference.astro"
 import Conferencia from "@/icons/Conference.astro"
 
 
@@ -50,7 +42,7 @@ const PROJECTS = [
     title: "Application of Quantum Machine Learning for Detection of Adventitious Respiratory Sounds.",
     authors: "Plou Llorente, F.; García-Vega, D.; Leal Castaño, A.; González Martínez, F.D.; Cañadas-Quesada, F.J.; Ranilla, J.",
     publish: "1st International Workshop on Sound Signal Processing Applications. Cádiz",
-    date: "2/7/2024 - 8/7/2024",
+    date: "02/07/2024 - 08/07/2024",
     description:
       "",
     link: "",
@@ -63,7 +55,7 @@ const PROJECTS = [
     title: "Hierarchical QCNNs and parameter optimization through bioinspired algorithms.",
     authors: "Plou Llorente, F.; García-Vega, D.; Leal Castaño, A.; Salvador Navarro, A.A.; Combarro, E.F.; Cortina, R.",
     publish: "24th Computational and Mathematical Methods in Science and Engineering Conference. Cádiz",
-    date: "2/7/2024 - 8/7/2024",
+    date: "02/07/2024 - 08/07/2024",
     description:
       "",
     
@@ -86,7 +78,7 @@ const PROJECTS = [
     title: "Avances en la clasificación de señales biomédicas con kernels cuánticos y otras técnicas de quantum machine learning.",
     authors: "García-Vega, D.; González-Castillo, S.; Combarro, E.F.; Ranilla, J.",
     publish: " 8º Encuentro ALAMA: Álgebra Lineal, Análisis Matricial y Aplicaciones. Gijón ",
-    date: "12/6/2024 - 14/6/2024",
+    date: "12/06/2024 - 14/06/2024",
     description:
     "",
     
@@ -97,7 +89,7 @@ const PROJECTS = [
      title: "Performance Evaluation of Signal Representation Techniques for Respiratory Sounds using Quantum Machine Learning. ",
     authors: "García-Vega, D.; González-Castillo, S.; Combarro, E.F.; Ranilla, J.",
     publish: "The 22nd IEEE Mediterranean Electrotechnical Conference . Porto ",
-    date: "25/6/2024 - 27/6/2024",
+    date: "25/06/2024 - 27/06/2024",
     description:
       "",
     
@@ -108,7 +100,7 @@ const PROJECTS = [
     title: "Algunos experimentos en la detección de enfermedades respiratorias con procesamiento de señales sonoras y quantum machine learning.",
     authors: "García-Vega, D.; González-Castillo, S.; Combarro, E.F.; Ranilla, J.",
     publish: "XXXIV Jornadas de Paralelismo. Coruña",
-    date: "17/6/2024 - 19/6/2024",
+    date: "17/06/2024 - 19/06/2024",
     description:
       "",
     
@@ -129,11 +121,15 @@ const PROJECTS = [
           <h6 class="text-base text-gray-400 dark:text-gray-500">{date}</h6>
           <div class="flex flex-wrap mt-2">
             <ul class="flex flex-row mb-2 gap-x-2">
-              {tags.map((tag) => (
+                {tags.map((tag) => (
                 <li>
-                  <span className={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}>{tag.name}</span>
+                    <span
+                        className={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 ${!tag.icon ? "pl-2" : ""}`}>
+                        {tag.icon && <tag.icon className="size-4" />}
+                        {tag.name}
+                    </span>
                 </li>
-              ))}
+                ))}
             </ul>
           </div>
           
