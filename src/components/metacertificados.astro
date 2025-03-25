@@ -1,0 +1,197 @@
+---
+// import Certificado from "@/icons/Certificate.astro"
+
+// const TAGS = {
+//   CERTIFICATE: {
+//     name: "Certificado",
+//     class: "bg-black text-white outline outline-1 outline-[#7f7f7f]",
+//     icon: Certificado,
+//   },
+//   ONLINE: {
+//     name: "Online",
+//     class: "bg-black text-white outline outline-1 outline-[#7f7f7f]",
+//     icon: "",
+//   }
+// }
+
+const CERTIFICATES = [
+  {
+    title: "Quantum Machine Learning Workshop",
+    authors: "Eviden - Jornada de Computación Cuántica en Asturias",
+    publish: "MyQML Quantum Computing Workshop",
+    date: "04/2024",
+    description: "",
+    link: "https://www.linkedin.com/posts/eviden_jornada-de-computaci%C3%B3n-cu%C3%A1ntica-en-asturias-activity-7292505926576558080-G7Cj/?originalSubdomain=es",
+    // tags: [TAGS.CERTIFICATE, TAGS.ONLINE],
+    metacognition: "La jornada de Computación Cuántica en Asturias fue una oportunidad para aprender más sobre los fundamentos y aplicaciones del Quantum Machine Learning. 🤖✨ Durante el taller, conocí myQML, una librería de Eviden, y exploré su capacidad para adaptar y transpilar circuitos cuánticos a diversas librerías de computación cuántica, lo que permite comparar resultados entre ellas. 🔄💻 También pude analizar algunas de las posibles aplicaciones de esta tecnología en distintos ámbitos de investigación y desarrollo. 🚀🔬",
+    image: "certificates/myqml.png"
+  },
+  {
+    title: "Machine Learning with Python",
+    authors: "FreeCodeCamp",
+    publish: "Certificación en Machine Learning",
+    date: "02/2024",
+    description: "",
+    link: "https://www.freecodecamp.org/certification/DiegoGV/machine-learning-with-python-v7",
+    // tags: [TAGS.CERTIFICATE, TAGS.ONLINE],
+    metacognition: "Este curso de Machine Learning con Python fue una buena oportunidad para poner a prueba mis conocimientos y ver cómo se adaptaban a una certificación profesional. 📚✅ Gracias a mi experiencia previa, tanto en el ámbito académico como profesional, completar los desafíos resultó bastante fluido, ya que muchos de los conceptos y herramientas, como scikit-learn, ya me eran familiares. 💻🤖 Aun así, fue interesante repasar metodologías, reforzar buenas prácticas y estructurar mejor lo que ya sabía. En general, fue una experiencia útil para validar mis habilidades y afianzar mi confianza en el campo del aprendizaje automático. 🚀🔍",
+    image: "certificates/freecodecampML.png"
+  },
+  {
+    title: "Scientific Computing with Python",
+    authors: "FreeCodeCamp",
+    publish: "Certificación en Computación Científica",
+    date: "02/2024",
+    description: "",
+    link: "https://www.freecodecamp.org/certification/DiegoGV/scientific-computing-with-python-v7",
+    // tags: [TAGS.CERTIFICATE, TAGS.ONLINE],
+    metacognition: "El curso de Computación Científica con Python fue una gran oportunidad para reforzar y organizar mis conocimientos en análisis computacional. 🐍💡 Gracias a mi experiencia previa, el aprendizaje resultó bastante fluido, permitiéndome repasar estructuras de datos, algoritmos de optimización y técnicas de procesamiento numérico de manera práctica. 💻📊 Más que un reto, cada módulo fue una confirmación de cómo Python puede ser una herramienta poderosa en el ámbito científico, combinando eficiencia y flexibilidad para resolver problemas complejos. En general, fue una experiencia útil para afianzar habilidades y aplicarlas con mayor confianza. 🚀🔬",
+    image: "certificates/freecodecampSCPy.png"
+  },
+  {
+    title: "Deep Learning Fundamentals",
+    authors: "NVIDIA",
+    publish: "Curso Introducción al Deep Learning",
+    date: "03/2024",
+    description: "",
+    link: "https://learn.nvidia.com/certificates?id=8d08afaac49f48fe94295c4309d7fea3#",
+    // tags: [TAGS.CERTIFICATE, TAGS.ONLINE],
+    metacognition: "El curso de Deep Learning de NVIDIA fue mi primera experiencia formal en este campo, permitiéndome explorar los fundamentos de las redes neuronales profundas de una manera práctica y aplicada. 🧠💻 A lo largo del curso, trabajé en proyectos interesantes, como la clasificación de animales y el fine-tuning de un modelo de clasificación de imágenes para ajustarlo a una especie específica, lo que me permitió experimentar de primera mano cómo se pueden adaptar estos modelos a distintos escenarios. 🐶📊 Fue emocionante descubrir el potencial de esta tecnología y las posibilidades que ofrece en múltiples sectores, motivándome a seguir explorando el mundo del Deep Learning. 🚀🔍",
+    image: "certificates/nvidiaDL.png"
+  },
+  {
+    title: "Intro to Deep Learning",
+    authors: "Kaggle",
+    publish: "Curso de Introducción al Deep Learning",
+    date: "02/2024",
+    description: "",
+    link: "https://www.kaggle.com/learn/certification/diegogarcavega/intro-to-deep-learning",
+    // tags: [TAGS.CERTIFICATE, TAGS.ONLINE],
+    metacognition: "El curso de Introducción al Deep Learning de Kaggle fue una buena oportunidad para repasar y poner a punto mis conocimientos en este campo. 🔄🧠 A veces, al centrarnos en conceptos más avanzados, dejamos de lado lo básico, por lo que refrescar estos fundamentos me pareció una forma útil de prepararme para mi nuevo trabajo. 💻✅ Cada ejercicio me ayudó a recordar principios esenciales que pueden pasarse por alto, reafirmando que, en muchas ocasiones, lo simple es más efectivo que lo complicado. Siguiendo esta mentalidad, busco seguir aprendiendo y repasando todos los días para mejorar constantemente. 🚀📚",
+    image: "certificates/Diego G.V - Intro to Deep Learning.png"
+  },
+  {
+    title: "Feature Engineering",
+    authors: "Kaggle",
+    publish: "Curso de Ingeniería de Características",
+    date: "02/2024",
+    description: "",
+    link: "https://www.kaggle.com/learn/certification/diegogarcavega/feature-engineering",
+    // tags: [TAGS.CERTIFICATE, TAGS.ONLINE],
+    metacognition: "El curso de Ingeniería de Características de Kaggle fue una excelente oportunidad para profundizar en el crucial proceso de preprocesado de datos. 📊🔧 Aprendí que un buen preprocesado es esencial para garantizar que nuestras tareas como ingenieros de datos sean efectivas, ya que podemos evitar sesgos y resultados indeseados si utilizamos métodos apropiados. Cada módulo me ayudó a entender que transformar los datos de manera adecuada es tan importante como elegir el algoritmo correcto, y cómo esto puede marcar la diferencia en el desempeño de un modelo de machine learning. Al darle la importancia que merece a este paso, me siento más preparado para abordar proyectos de IA de manera más precisa y confiable. 🚀💡",
+    image: "certificates/Diego G.V - Feature Engineering.png"
+  },
+  {
+    title: "Data Visualization",
+    authors: "Kaggle",
+    publish: "Curso de Visualización de Datos",
+    date: "02/2024",
+    description: "",
+    link: "https://www.kaggle.com/learn/certification/diegogarcavega/data-visualization",
+    // tags: [TAGS.CERTIFICATE, TAGS.ONLINE],
+    metacognition: "El curso de Visualización de Datos transformó mi perspectiva sobre cómo comunicar información compleja. 📈🎨 Más allá de crear gráficos, aprendí a contar historias a través de datos, utilizando herramientas como matplotlib y seaborn para convertir números en narrativas visuales convincentes. Cada ejercicio fue una lección sobre la importancia de la comunicación clara y efectiva en ciencia de datos. 🌟🔍",
+    image: "certificates/Diego G.V - Data Visualization.png"
+  },
+  {
+    title: "Intermediate Machine Learning",
+    authors: "Kaggle",
+    publish: "Curso Intermedio de Machine Learning",
+    date: "02/2024",
+    description: "",
+    link: "https://www.kaggle.com/learn/certification/diegogarcavega/intermediate-machine-learning",
+    // tags: [TAGS.CERTIFICATE, TAGS.ONLINE],
+    metacognition: "El curso Intermedio de Machine Learning de Kaggle fue una excelente oportunidad para repasar y reflexionar sobre mis conocimientos en este campo. 📚💡 Me permitió hacer una introspección sobre mis aptitudes y consolidar técnicas más avanzadas, como los métodos de ensemble, el manejo de datos faltantes y las estrategias de validación más sofisticadas. Aunque ya tenía una comprensión básica, este curso me ayudó a profundizar en los detalles y a entender que el verdadero reto del machine learning está en los pequeños ajustes y la experimentación continua. Ahora, me siento más preparado para abordar proyectos complejos con una perspectiva más crítica y refinada. 🚀🔍",
+    image: "certificates/Diego G.V - Intermediate Machine Learning.png"
+  },
+  {
+    title: "Intro to Machine Learning",
+    authors: "Kaggle",
+    publish: "Curso de Introducción al Machine Learning",
+    date: "02/2024",
+    description: "",
+    link: "https://www.kaggle.com/learn/certification/diegogarcavega/intro-to-machine-learning",
+    // tags: [TAGS.CERTIFICATE, TAGS.ONLINE],
+    metacognition: "Este curso de Introducción al Machine Learning en Kaggle fue una excelente manera de prepararme para mis estudios de máster en IA. 🎓💡 A través de él, pude revisar y afianzar muchos de los conceptos que ya conocía, desde los fundamentos de los modelos de regresión hasta los primeros pasos en árboles de decisión. Aunque ya tenía cierta comprensión de estos temas, el curso me permitió reforzar mi conocimiento y asegurarme de tener una base sólida para enfrentar desafíos más complejos en el futuro. Fue una forma ideal de repasar lo aprendido y asegurarme de que mis habilidades están bien afianzadas antes de comenzar mi máster. 🚀🤖",
+    image: "certificates/Diego G.V - Intro to Machine Learning.png"
+  },
+  // {
+  //   title: "Intro to Programming",
+  //   authors: "Kaggle",
+  //   publish: "Curso de Introducción a la Programación",
+  //   date: "02/2024",
+  //   description: "",
+  //   link: "https://www.kaggle.com/learn/certification/diegogarcavega/intro-to-programming",
+  //   // tags: [TAGS.CERTIFICATE, TAGS.ONLINE],
+  //   metacognition: "El curso de Introducción a la Programación fue mi primera inmersión sistemática en el mundo del código. 💻🌱 Aprendí no solo sintaxis, sino la lógica y la mentalidad necesaria para resolver problemas de manera creativa y estructurada. Cada ejercicio fue una pequeña aventura que me mostró el poder transformador de la programación para dar vida a ideas y soluciones innovadoras. 🚀✨",
+  //   image: "certificates/Diego G.V - Intro to Programming.png"
+  // },
+  {
+    title: "Pandas",
+    authors: "Kaggle",
+    publish: "Curso de Manipulación de Datos con Pandas",
+    date: "02/2024",
+    description: "",
+    link: "https://www.kaggle.com/learn/certification/diegogarcavega/pandas",
+    // tags: [TAGS.CERTIFICATE, TAGS.ONLINE],
+    metacognition: "El curso de Pandas fue una lección sobre el poder de la manipulación de datos en Python. 📊🐼 Aprendí a transformar, filtrar y analizar conjuntos de datos complejos con sencillez y eficacia. Cada función y método era una herramienta precisa que me permitía desvelar información subyacente en los datos. Más allá de la técnica, comprendí que los datos son otra forma de lenguaje. 🔍🌟",
+    image: "certificates/Diego G.V - Pandas.png"
+  },
+  {
+    title: "Python",
+    authors: "Kaggle",
+    publish: "Curso Fundamental de Python",
+    date: "02/2024",
+    description: "",
+    link: "https://www.kaggle.com/learn/certification/diegogarcavega/python",
+    // tags: [TAGS.CERTIFICATE, TAGS.ONLINE],
+    metacognition: "Mi viaje con Python comenzó a los 15 años, siendo autodidacta, y ha sido una aventura de aprendizaje constante. 🐍💡 Este curso fundamental de Python me sirvió para comprobar que todo ese conocimiento, las ganas y la pasión que he invertido por cuenta propia son fácilmente traducibles a un entorno profesional. Completar los desafíos de la certificación me permitió ver cómo mi experiencia personal con el lenguaje se adapta a proyectos más estructurados, reforzando mi confianza en mis habilidades y mi capacidad para aplicar Python de manera eficiente en un contexto profesional. 🚀💻",
+    image: "certificates/Diego G.V - Python.png"
+  }
+]
+---
+
+<div class="flex flex-col gap-y-16">
+    {CERTIFICATES.map(({ title, publish, authors, date, tags, metacognition, image, link }) => (
+      <article class="flex flex-col space-y-8 group bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md">
+        <div class="w-full">
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">{title}</h3>
+          <h4 class="text-xl font-bold text-gray-700 dark:text-gray-200">{publish}</h4>
+          <h5 class="text-l text-gray-500 dark:text-gray-400">{authors}</h5>
+          <h6 class="text-base text-gray-400 dark:text-gray-500">{date}</h6>
+          <div class="flex flex-wrap mt-2">
+            <ul class="flex flex-row mb-2 gap-x-2">
+                {/* {tags.map((tag) => (
+                <li>
+                    <span
+                        className={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 ${!tag.icon ? "pl-2" : ""}`}>
+                        {tag.icon && <tag.icon className="size-4" />}
+                        {tag.name}
+                    </span>
+                </li>
+                ))} */}
+            </ul>
+          </div>
+          
+          {image && (
+            <div class="mt-4 mb-2 overflow-hidden rounded-lg">
+              <a href={link} target="_blank" rel="noopener noreferrer">
+                <img 
+                  src={`${import.meta.env.BASE_URL}/${image}`} 
+                  alt={`Certificate for ${title}`} 
+                  class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </a>
+            </div>
+          )}
+          
+          {metacognition && (
+            <div class="mt-4 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg">
+              <h3 class="text-xl font-semibold">Proceso de Aprendizaje 💡</h3>
+              <p class="text-gray-700 dark:text-gray-300">{metacognition}</p>
+            </div>
+          )} 
+          
+        </div>
+      </article>
+    ))}
+  </div>
