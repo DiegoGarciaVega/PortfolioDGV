@@ -1,0 +1,238 @@
+---
+import GitHub from "./icons/GitHub.astro"
+import NextJS from "./icons/NextJS.astro"
+import Tailwind from "./icons/Tailwind.astro"
+import Link from "./icons/Link.astro"
+import LinkButton from "./LinkButton.astro"
+import Python from "@/icons/python.astro"
+import PyTorch from "@/icons/PyTorch.astro"
+import Pennylane from "@/icons/Pennylane.astro"
+import AstroICO from "@/icons/Astro.astro"
+import LazyQMLImg from "./assets/projects/lazyQML.jpg"
+import Momentum from "./assets/projects/Momentum.jpg"
+import Portfolio from "./assets/projects/Portfolio.png"
+import Streamlit from "@/icons/streamlit.astro"
+
+const TAGS = {
+  PYTHON: {
+    name: "Python",
+    class: "bg-[#003159] text-white",
+    icon: Python,
+  },
+  TORCH: {
+    name: "PyTorch",
+    class: "bg-[#003159] text-white",
+    icon: PyTorch,
+  },
+  PENNYLANE: {
+    name: "Pennylane",
+    class: "bg-[#fefefe] text-black outline outline-1 outline-black",
+    icon: Pennylane,
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-[#003159] text-white",
+    icon: Tailwind,
+  },
+  ASTRO: {
+    name: "Astro",
+    class: "bg-black text-white outline outline-1 outline-[#7f7f7f]",
+    icon: AstroICO,
+  },
+  DESARROLLO: {
+  name: "⚪ En desarrollo",
+  class: "bg-[#003159] text-white outline outline-1 outline-[#7f7f7f] animate-pulse bg-green-500",
+  icon: "",
+},
+STREAMLIT: {
+  name: "Streamlit",
+  class: "bg-[#fefefe] text-black outline outline-1 outline-black",
+  icon: Streamlit,
+},
+}
+const PROJECTS = [
+  {
+    title: "LazyQML",
+    authors: "",
+    publish: "",
+    date: "",
+    description: "",
+    tags: [TAGS.PYTHON, TAGS.TORCH, TAGS.PENNYLANE, TAGS.DESARROLLO],
+    metacognition: "Desarrollar LazyQML ha sido una experiencia emocionante, permitiendo la evaluación rápida y sencilla de modelos de Quantum Machine Learning (QML). Un claro ejemplo de su simplicidad es que, con solo dos líneas de código, se pueden obtener resultados de distintos modelos de machine learning cuántico. Esta librería está diseñada para ser modular, eficiente y fácil de integrar en entornos de Quantum High-Performance Computing (QHPC), facilitando así el avance de la comunidad QML. 📔💻",
+    image: "projects/lazyQML.jpg",
+    html: `
+      <pre class="bg-gray-900 text-grey-400 p-4 rounded-lg overflow-x-auto">
+        <code class="block whitespace-pre-wrap font-mono text-sm">
+<span class="text-blue-400">from</span> sklearn.datasets <span class="text-blue-400">import</span> load_iris
+<span class="text-blue-400">from</span> lazyqml.lazyqml <span class="text-blue-400">import</span> *
+
+<span class="text-gray-400"># Load data</span>
+data = load_iris()
+X = data.data
+y = data.target
+
+classifier = <span class="text-yellow-400">QuantumClassifier</span>(nqubits={<span class="text-orange-400">4</span>}, classifiers={<span class="text-purple-400">Model.QNN</span>, <span class="text-purple-400">Model.QSVM</span>}, epochs=<span class="text-orange-400">10</span>)
+
+<span class="text-gray-400"># Fit and predict</span>
+classifier.fit(X=X, y=y, test_size=<span class="text-orange-400">0.4</span>)
+  </code>
+  <div class="flex justify-center mt-8">
+  <table class="table-auto border-collapse border border-gray-300 rounded-lg text-center w-3/4 dark:border-gray-700 dark:text-white">
+    <thead>
+      <tr class="bg-gray-200 dark:bg-gray-800">
+        <th class="border border-gray-300 px-4 py-2 dark:border-gray-700 dark:bg-gray-600 rounded-tl-lg">Model</th>
+        <th class="border border-gray-300 px-20 py-2 dark:border-gray-700 dark:bg-gray-600">Embedding</th>
+        <th class="border border-gray-300 px-4 py-2 dark:border-gray-700 dark:bg-gray-600">Ansatz</th>
+        <th class="border border-gray-300 px-4 py-2 dark:border-gray-700 dark:bg-gray-600">Accuracy</sup></th>
+        <th class="border border-gray-300 px-4 py-2 dark:border-gray-700 dark:bg-gray-600">F1 Score</th>
+        <th class="border border-gray-300 px-4 py-2 dark:border-gray-700 dark:bg-gray-600 rounded-tr-lg">Time (s)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="bg-white hover:bg-gray-50 dark:bg-gray-900 dark:hover:bg-gray-700">
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">QSVM</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">Amplitude Embedding</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">~</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">83%</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">0.82</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">447.8</td>
+      </tr>
+      <tr class="bg-white hover:bg-gray-50 dark:bg-gray-900 dark:hover:bg-gray-700">
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">QSVM</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">RZ Embedding</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">~</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">79%</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">0.78</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">48.7</td>
+      </tr>
+      <tr class="bg-white hover:bg-gray-50 dark:bg-gray-900 dark:hover:bg-gray-700">
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">QSVM</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">RY Embedding</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">~</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">79%</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">0.78</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">48.2</td>
+      </tr>
+      <tr class="bg-white hover:bg-gray-50 dark:bg-gray-900 dark:hover:bg-gray-700">
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">QSVM</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">RX Embedding</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">~</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">79%</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">0.78</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">48.3</td>
+      </tr>
+      <tr class="bg-white hover:bg-gray-50 dark:bg-gray-900 dark:hover:bg-gray-700">
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">QNN</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">RY Embedding</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">HCzRx</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">79%</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">0.78</td>
+        <td class="border border-gray-300 px-4 py-2 dark:border-gray-700">31.5</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</pre>
+      <div class="flex justify-center mt-8">
+    `,
+  },
+  {
+    title: "Asthma Detection App",
+    authors: "",
+    publish: "",
+    date: "",
+    description: "",
+    link: "",
+    github: "",
+    tags: [TAGS.PYTHON, TAGS.STREAMLIT], 
+    metacognition: "Este proyecto me permitió aplicar conocimientos de inteligencia artificial 🤖 y procesamiento de señales de audio 🎧 en un contexto médico, enfocándome en la detección de patrones respiratorios para evaluar la posibilidad de asma 💨. A través del desarrollo de la interfaz con Streamlit 🖥️, comprendí la importancia de diseñar herramientas accesibles y funcionales, asegurando una experiencia sencilla para el usuario 👩‍⚕️. La integración de modelos de IA para el análisis de audio me llevó a reflexionar sobre la precisión y limitaciones de estos enfoques ⚖️, así como la necesidad de validación en entornos clínicos 🏥. Además, trabajar en la presentación de resultados mediante indicadores visuales 🔍, como el de gravedad 🟢🟡🟠🔴, reforzó la relevancia de la claridad en la comunicación de datos médicos 📊. Este proceso me ayudó a consolidar habilidades técnicas en desarrollo de software 💻 y análisis de audio, además de fomentar una mayor conciencia sobre la aplicación responsable de la tecnología en el ámbito de la salud ⚠️.",
+    image: "projects/Asthma Detection.png"
+  },
+  {
+    title: "Advent of Code 2024",
+    authors: "",
+    publish: "",
+    date: "",
+    description:"",
+    tags: [TAGS.PYTHON, TAGS.DESARROLLO],
+    metacognition: "",
+    image: "projects/advent.mp4",
+    metacognition: "Participar en el Advent of Code 2024 ha fortalecido mis habilidades en resolución de problemas y programación. El video animado que acompaña este texto ilustra perfectamente este proceso, mostrando cómo resolver un desafío de búsqueda del camino menos costoso en un laberinto mediante algoritmos como Dijkstra o A*. Ver la solución en acción me ha permitido comprender mejor estos conceptos y aplicarlos de manera más eficiente. Con 33 estrellas ⭐ acumuladas, sigo avanzando en el reto, consolidando conocimientos y perfeccionando mis habilidades con cada nuevo problema. Mi objetivo es completar todas las ediciones, reflexionando sobre los aprendizajes y mejoras a lo largo del camino."
+  },
+  {
+    title: "Atari Breakout Reinforcement Learning",
+    authors: "",
+    publish: "",
+    date: "",
+    description:"",
+    tags: [TAGS.PYTHON, TAGS.TORCH],
+    metacognition: "",
+    image: "projects/breakoutRL.gif",
+    metacognition: "Desarrollar este proyecto de Aprendizaje por Refuerzo para entrenar un modelo capaz de ganar en Breakout ha sido un reto emocionante y una gran oportunidad de aprendizaje. Uno de los mayores logros fue optimizar el entrenamiento en GPU ⚡, lo que me permitió mejorar el rendimiento y entender mejor la distribución de carga computacional. También aprendí la importancia de congelar configuraciones para asegurar que el entrenamiento sea reproducible. Otro hito clave fue integrar visión por computadora (OpenCV) 🖥️👀, lo que me ayudó a desacoplar el modelo del juego y extraer información visual en tiempo real. Este proyecto ha sido una experiencia increíble para mejorar en aprendizaje por refuerzo, optimización computacional y visión por computador. ¡Sigo explorando y mejorando! 💡🔥"  },
+]
+---
+
+<div class="flex flex-col gap-y-16">
+  {PROJECTS.map(({ title, publish, authors, date, tags, metacognition, image, html }) => (
+  <article class="flex flex-col space-y-8 group bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md">
+    <div class="w-full">
+      <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">{title}</h3>
+      <h4 class="text-xl font-bold text-gray-700 dark:text-gray-200">{publish}</h4>
+      <h5 class="text-l text-gray-500 dark:text-gray-400">{authors}</h5>
+      <h6 class="text-base text-gray-400 dark:text-gray-500">{date}</h6>
+      <div class="flex flex-wrap mt-2">
+        <ul class="flex flex-row mb-2 gap-x-2">
+          {tags.map((tag) => (
+            <li>
+              <span
+                className={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 ${!tag.icon ? "pl-2" : ""}`}>
+                {tag.icon && <tag.icon className="size-4" />}
+                {tag.name}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {image && (
+        <div class="mt-4 mb-2 overflow-hidden rounded-lg">
+          {image.endsWith(".mp4") || image.endsWith(".webm") ? (
+            <video
+              src={`${import.meta.env.BASE_URL}/${image}`}
+              alt={`Video for ${title}`}
+              class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+              autoplay
+              loop
+              muted
+            />
+          ) : image.endsWith(".gif") ? (
+            <img
+              src={`${import.meta.env.BASE_URL}/${image}`}
+              alt={`GIF for ${title}`}
+              class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+          ) : (
+            <img 
+              src={`${import.meta.env.BASE_URL}/${image}`} 
+              alt={`Image for ${title}`} 
+              class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+          )}
+        </div>
+      )}
+
+      {metacognition && (
+        <div class="mt-4 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg">
+          <h3 class="text-xl font-semibold">Evidencias de Aprendizaje 💡</h3>
+          <p class="text-gray-700 dark:text-gray-300">{metacognition}</p>
+          {html && (
+          <div class="mt-4">
+            <Fragment set:html={html} client:load />
+          </div>
+        )}
+        </div>
+      )}
+    </div>
+  </article>
+))}
+</div>
