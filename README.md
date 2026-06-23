@@ -35,7 +35,6 @@ He participado en congresos nacionales e internacionales, como **IEEE MELECON 20
 
 ## 📞 Contáctame
 📄 [CV](https://diegogarciavega.github.io/PortfolioDGV/cv)  
-📧 [Email](mailto:diego@example.com)  
 🔗 [LinkedIn](https://www.linkedin.com/in/diegogarciavega/)  
 🐙 [GitHub](https://github.com/diegogarciavega)  
 
